@@ -42,5 +42,5 @@ point = (1, 2)
 hess, hess_at_point = hessian_matrix(func, vars, point)
 
 # Виводимо результат
-print("Матриця Гессіана:\n", np.array(hess))
-print("Матриця Гессіана у точці", point, ":\n", hess_at_point)
+print("Матриця Гессe:\n", np.array(hess))
+print("Матриця Гессe у точці", point, ":\n", hess_at_point)

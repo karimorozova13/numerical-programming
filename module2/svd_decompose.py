@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 matrix_a = np.array([[4, 0],
                     [3, -5]])
@@ -61,3 +62,9 @@ print('SVD Sigma ')
 print(Ss)
 print('SVD Vh ')
 print(Vh)
+
+k = 2
+plt.plot(np.arange(k), Ss[:k])
+plt.xlabel('Rank of singular value')
+plt.ylabel('Magnitude of singular value')
+plt.show()
